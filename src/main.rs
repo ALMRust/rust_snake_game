@@ -1,3 +1,5 @@
+#![warn(clippy::all, clippy::pedantic)]
+
 extern crate rand;
 extern crate piston_window;
 
@@ -5,7 +7,7 @@ mod draw;
 mod snake;
 mod game;
 
-use piston_window::*;
+use piston_window::{Button, PistonWindow, PressEvent, UpdateEvent, WindowSettings, clear};
 use piston_window::types::Color;
 
 use game::Game;
